@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -24,6 +25,7 @@ button:active{transform:scale(.98)}
 .card{border:1px solid #9d5b67;border-radius:22px;padding:25px 22px;background:linear-gradient(145deg,#170b0fdd,#090607ee);box-shadow:0 0 35px #8c173522}
 .music{width:100%;border:1px solid #7d3946;border-radius:18px;padding:18px;margin:20px 0}
 .song{font-size:1.35rem;margin:10px 0 4px}
+.couple-photo{display:block;width:100%;height:auto;max-height:420px;object-fit:contain;border-radius:16px;border:1px solid #9d5b67;margin:20px auto;box-shadow:0 8px 28px #0008}
 a{color:#ffc0ca}
 .letter{text-align:left;background:#f0d5c4;color:#28151a;padding:28px 24px;border-radius:5px;box-shadow:0 10px 35px #0008;transform:rotate(-1deg)}
 .letter h2{font-weight:normal;font-style:italic;text-align:center}
@@ -34,6 +36,7 @@ a{color:#ffc0ca}
 </style>
 </head>
 <body>
+
 <section class="screen active" id="s1"><div class="inner">
 <div class="heart">♡</div><p class="small">UNA PEQUEÑA SORPRESA</p>
 <h1>Hay algo que quiero que descubras…</h1>
@@ -48,7 +51,11 @@ a{color:#ffc0ca}
 <p class="small">Nuestra canción</p>
 <div class="song">Until I Found You</div>
 <p class="small">Stephen Sanchez ft. Em Beihold</p>
-<p class="small">La foto de ustedes podrá agregarse aquí más adelante.</p>
+
+<img class="couple-photo"
+src="https://raw.githubusercontent.com/shirfer/Sorpresa-para-Mat-as/main/IMG_4545.jpeg"
+alt="Un recuerdo especial de nosotros dos">
+
 <div class="music">
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1Y3LN4zO1Edc2EluIoSPJN?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
@@ -90,6 +97,7 @@ a{color:#ffc0ca}
 <p>Por siempre. ∞</p>
 <button onclick="go(1)">Volver a comenzar</button>
 </div></section>
+
 <div class="dots" id="dots">● ○ ○ ○ ○ ○</div>
 <script>
 function go(n){
