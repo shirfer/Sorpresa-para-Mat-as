@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090607">
+<title>Una sorpresa para ti ❤️</title>
+<style>
+:root{--red:#ff5268;--pink:#ff9baa;--cream:#f8e9df}
+*{box-sizing:border-box}
+body{margin:0;background:#080607;color:var(--cream);font-family:Georgia,serif;min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 20%,#3a1018 0,transparent 42%),radial-gradient(circle at 10% 90%,#260b12 0,transparent 35%);z-index:-1}
+.screen{min-height:100svh;display:none;align-items:center;justify-content:center;padding:28px 20px;text-align:center;position:relative}
+.screen.active{display:flex;animation:fade .8s ease}
+.inner{width:min(100%,460px);margin:auto}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.heart{font-size:56px;color:var(--red);text-shadow:0 0 18px #ff294f,0 0 38px #ff294f;margin-bottom:22px}
+h1{font-size:clamp(2rem,8vw,3rem);font-weight:normal;line-height:1.2;margin:14px 0 22px}
+p{font-size:1.12rem;line-height:1.7;color:#f0d9d8}
+button,.linkbtn{border:1px solid #f5b4bd;background:transparent;color:#fff;border-radius:40px;padding:14px 24px;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin:10px 5px}
+button.primary{background:linear-gradient(120deg,#a51636,#ed536d);border:0}
+button:active{transform:scale(.98)}
+.small{font-size:.9rem;color:#c8aeb2}
+.card{border:1px solid #9d5b67;border-radius:22px;padding:25px 22px;background:linear-gradient(145deg,#170b0fdd,#090607ee);box-shadow:0 0 35px #8c173522}
+.music{width:100%;border:1px solid #7d3946;border-radius:18px;padding:18px;margin:20px 0}
+.song{font-size:1.35rem;margin:10px 0 4px}
+a{color:#ffc0ca}
+.letter{text-align:left;background:#f0d5c4;color:#28151a;padding:28px 24px;border-radius:5px;box-shadow:0 10px 35px #0008;transform:rotate(-1deg)}
+.letter h2{font-weight:normal;font-style:italic;text-align:center}
+.letter p{color:#321c21;font-size:1.03rem}
+.final{font-style:italic;color:#ffd6dc;font-size:clamp(1.5rem,6vw,2.2rem);line-height:1.5}
+.dots{position:fixed;bottom:14px;left:0;right:0;text-align:center;color:#b78c94;font-size:12px;letter-spacing:8px;pointer-events:none}
+.nav{margin-top:20px}
+</style>
+</head>
+<body>
+<section class="screen active" id="s1"><div class="inner">
+<div class="heart">♡</div><p class="small">UNA PEQUEÑA SORPRESA</p>
+<h1>Hay algo que quiero que descubras…</h1>
+<p>Preparé esto con mucho cariño para vos.</p>
+<button class="primary" onclick="go(2)">Toca la pantalla ❤️</button>
+</div></section>
+
+<section class="screen" id="s2"><div class="inner">
+<div class="heart">♡</div><p class="small">UN RECUERDO, UNA CANCIÓN</p>
+<div class="card">
+<div style="font-size:52px">❤️</div>
+<p class="small">Nuestra canción</p>
+<div class="song">Until I Found You</div>
+<p class="small">Stephen Sanchez ft. Em Beihold</p>
+<p class="small">La foto de ustedes podrá agregarse aquí más adelante.</p>
+<div class="music">
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1Y3LN4zO1Edc2EluIoSPJN?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+<a class="linkbtn" href="https://open.spotify.com/track/1Y3LN4zO1Edc2EluIoSPJN" target="_blank" rel="noopener">Abrir en Spotify ♫</a>
+</div>
+<p>Porque contigo… todo suena mejor ❤️</p>
+<button onclick="go(3)">Seguir descubriendo</button>
+</div></section>
+
+<section class="screen" id="s3"><div class="inner">
+<div class="heart">♡</div><h1>Una carta para ti…</h1>
+<p>Hay cosas que a veces el corazón siente mejor de lo que las palabras pueden explicar.</p>
+<button class="primary" onclick="go(4)">Leer mi carta ❤️</button>
+</div></section>
+
+<section class="screen" id="s4"><div class="inner">
+<div class="letter">
+<h2>Mi amor:</h2>
+<p>En cada canción, en cada mirada, en cada detalle… te elijo una y otra vez.</p>
+<p>Gracias por estar, por hacerme sonreír, por acompañarme y por ser mi lugar seguro en este mundo.</p>
+<p>Contigo todo tiene más sentido, todo es más bonito y todo se siente mejor.</p>
+<p>No quiero perderte; quiero seguir construyendo juntos, soñando, amando y compartiendo la vida.</p>
+<div style="text-align:center;font-size:30px;margin-top:18px">♡</div>
+</div>
+<button onclick="go(5)">Hay algo más…</button>
+</div></section>
+
+<section class="screen" id="s5"><div class="inner">
+<div class="heart">♡</div>
+<p class="final">Te sigo amando con la misma fuerza e intensidad de mi primer te amo ❤️</p>
+<div style="height:22px"></div>
+<p class="final" style="font-size:1.7rem">Siempre tú, mi cielo ❤️</p>
+<button class="primary" onclick="go(6)">Una última cosita…</button>
+</div></section>
+
+<section class="screen" id="s6"><div class="inner">
+<div class="heart">♡</div><p class="small">PARA VOS, MATÍAS</p>
+<h1 class="final">Te amo, Matías ❤️</h1>
+<p>Por siempre. ∞</p>
+<button onclick="go(1)">Volver a comenzar</button>
+</div></section>
+<div class="dots" id="dots">● ○ ○ ○ ○ ○</div>
+<script>
+function go(n){
+ document.querySelectorAll('.screen').forEach((el,i)=>el.classList.toggle('active',i===n-1));
+ document.getElementById('dots').textContent=Array.from({length:6},(_,i)=>i===n-1?'●':'○').join(' ');
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
